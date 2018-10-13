@@ -1,5 +1,7 @@
-const helloWorld = () => {
-  return "Hello, World!";
+import React from "react";
+
+const HelloWorld = () => {
+  return <div>"Hello, World!"</div>;
 };
 
-export default helloWorld;
+export default HelloWorld;

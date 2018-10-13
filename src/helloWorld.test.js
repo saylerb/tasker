@@ -1,7 +1,9 @@
-import helloWorld from "./helloWorld";
+import React from "react";
+import HelloWorld from "./HelloWorld";
+import { render } from "react-testing-library";
 
 describe("hello world", () => {
   test("we can print hello world", () => {
-    expect(helloWorld()).toEqual("Hello, World!");
+    const { getByTestId } = render(<HelloWorld />);
   });
 });
