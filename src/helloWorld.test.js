@@ -5,5 +5,7 @@ import { render } from "react-testing-library";
 describe("hello world", () => {
   test("we can print hello world", () => {
     const { getByTestId } = render(<HelloWorld />);
+
+    expect(getByTestId("message").innerHTML).toEqual("Hello, World!");
   });
 });
